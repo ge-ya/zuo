@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>*网页通栏及中间版心的设计</title>
+	<link rel="stylesheet" href="mydemo2.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	  <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+     <style> body {
+        background: #ffffe5;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 900px;
+        height: 400px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+<!--top层-->
+	<div class="top">
+	<div class="inner">
+	<div class="top-left"><a href="#/">您好，欢迎登陆！</a></div>
+	家家电脑商城
+	<div class="top-right"><a href="#/"> 退出登录</a></div>
+	</div>
+	</div>
+<!--logo层-->	
+     <div class="logo">
+     	<div class="imgbox">
+        <img src="images/logo.png" width="100%" height="100%">
+     	</div>
+         <div class="headersection">
+        <div class="sitetitle">精彩直供好货！!</div>
+      </div>
+     	<div class="inputbox"><br><br>
+         <form method="post" action="#/">
+          <input class="textfield" name="search" type="text" value="大家都在搜" id="keyword"/>
+              <input class="button" type="submit" name="Submit" value="搜索" />
+         </form>
+     	</div>
+     </div>
+<!--nav层-->
+<div class="nav">
+	<ul>
+		<li><a href="">聚划算</a></li>
+		<li><a href="">快速抢购</a></li>
+		<li><a href="">电器城</a></li>
+		<li><a href="">司法拍卖</a></li>
+		<li><a href="">有好货</a></li>
+	</ul>
+</div>
+<!--banner层-->
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/bg1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/bg10.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+ <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+<!--content图片层-->
+<div class="photowall">
+<div class="item"><a href=""><img src="images/image-01.jpg" alt="01"></a></div>
+<div class="item"><a href=""><img src="images/image-02.jpg" alt="02"></a></div>
+<div class="item"><a href=""><img src="images/image-03.jpg" alt="03"></a></div>
+<div class="item"><a href=""><img src="images/image-04.jpg" alt="04"></a></div>
+<div class="item"><a href=""><img src="images/image-06.jpg" alt="05"></a></div>
+<div class="item"><a href=""><img src="images/image-07.jpg" alt="06"></a></div>
+<div class="item"><a href=""><img src="images/image-05.jpg" alt="07"></a></div>
+<div class="item"><a href=""><img src="images/image-08.jpg" alt="08"></a></div>
+</div>
+<!--图文信息层-->
+<div class="content">
+<ul>
+	<li><a href=""><img src="images/image-02.jpg" alt=""><br>
+	飞跃电脑<br><span>￥<em>3800</em></span></a></li>
+	<li><a href=""><img src="images/image-04.jpg" alt=""><br>
+	超度电脑<br><span>￥<em>6500</em></span></a></li>
+	<li><a href=""><img src="images/image-07.jpg" alt=""><br>
+	飞翔电脑<br><span>￥<em>3600</em></span></a></li>
+	<li><a href=""><img src="images/image-03.jpg" alt=""><br>
+	开心电脑<br><span>￥<em>7380</em></span></a></li>
+	<li><a href=""><img src="images/image-06.jpg" alt=""><br>
+	无鸣电脑<br><span>￥<em>6900</em></span></a></li>
+	<li><a href=""><img src="images/image-05.jpg" alt=""><br>
+	筑梦电脑<br><span>￥<em>4000</em></span></a></li>
+	<li><a href=""><img src="images/image-08.jpg" alt=""><br>
+	万福电脑<br><span>￥<em>7400</em></span></a></li>
+	<li><a href=""><img src="images/image-02.jpg" alt=""><br>
+	井然有序电脑<br><span>￥<em>3500</em></span></a></li>
+</ul>
+</div>
+<!--结束显示-->
+<div class="card">
+	<div class="header"><h3>End!!!</h3></div>
+</div>
+
+<!--底部显示-->
+<div class="bottom">
+	<div class="bottominner">
+    <br><br>
+	<p>制作信息：家家电脑商城</p>
+	<p>网络版权信息：zzzz@20200416</p>
+    <p>客服电话：19880416220</p>
+     <p>举报投诉电话：55512-6</p>
+    </div>
+</div>
+<!--返回顶部-->
+<div class="totop"><br><a href="#">顶部</a></div>	
+</body>
+</html>
